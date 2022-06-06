@@ -1,0 +1,353 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  position: relative;
+  background-image: url("checkers2.png");
+  background-repeat:repeat-y;
+  background-position: center;
+  background-color: #282c34;
+  min-height: 150vh;
+  font-size: calc(10px + 2vmin);
+  transition: 0.5s;
+}
+
+.AppLight {
+  transition: 0.5s;
+  background-color: #f1f1f1;
+}
+
+.header{
+  position: relative;
+  background-color: #4a505a;
+  width: 100%;
+  height: 100px;
+  box-shadow: 0px 0px 5px 2px #b4b4b488;
+  filter: saturate(1.5);
+  filter: brightness(1.5);
+}
+
+.HeaderMenu{
+  position: relative;
+  left: 10px;
+  position: relative;
+  display: inline-flex;
+  list-style-type: none;
+  color: rgba(255, 255, 255, 0.404);
+}
+
+.HeaderMenu li {
+  position: relative;
+  display: table-cell;
+  margin: 4px 25px 25px 25px;
+  border: groove 2px;
+  border-color: rgba(0, 0, 0, 0.281);
+  border-radius: 5px;
+  width: 150px;
+  height: 90px;
+  text-align: center;
+  text-shadow: #121418 -2px 2px 5px;
+  font-weight: 500;
+}
+
+.HeaderMenu div {
+ position: relative; 
+ margin-top: 2px;
+ padding-top: 25px;
+ padding-bottom: 25px;
+}
+.isActive{
+  color: blue;
+}
+
+.HeaderMenu a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.line{
+  background-color: #4a505a ;
+  width: 100%;
+  height: 3px;
+  top: 10px;
+  box-shadow: 0px 0px 2px 1px #b4b4b488;
+  border-top: rgba(255, 255, 255, 0.514) 1px groove;
+  border-bottom: rgba(255, 255, 255, 0.514) 1px groove;
+}
+
+.toggle{
+  position: relative;
+  width: 50px;
+  height: 25px;
+  background-color: white;
+  float: right;
+  margin-right: 50px;
+  margin-top: 5px;
+  border-radius: 25px;
+  border:rgb(0, 0, 0) groove 2px;
+  display: grid;
+  
+}
+.trigger{
+  transition: 0.5s;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: blue;
+  border-radius: 25px;
+  left: 1px;
+}
+.triggerRight{
+  transition: 0.5s;
+  left: 24px;
+}
+
+.HomePg{
+  position: relative;
+  background-color: none;
+  width: 100%;
+  height: 20px;
+  
+}
+.Line1{
+  background-color: #4a505a ;
+  width: 100%;
+  height: 3px;
+  box-shadow: 0px 0px 2px 1px #b4b4b488;
+  border-top: rgba(255, 255, 255, 0.514) 1px groove;
+  border-bottom: rgba(255, 255, 255, 0.514) 1px groove;
+}
+.Line2{
+  position: relative;
+  background-color: #4a505a ;
+  width: 100%;
+  height: 3px;
+  top: 99%;
+  box-shadow: 0px 0px 2px 1px #b4b4b488;
+  border-top: rgba(255, 255, 255, 0.514) 1px groove;
+  border-bottom: rgba(255, 255, 255, 0.514) 1px groove;
+}
+
+.Page1{
+  position: relative;
+  width: 99%;
+  height: 700px;
+  background-color: #b4b4b488;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 2px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.281);
+  border-top: rgb(49, 49, 49) groove 2px;
+  border-bottom: rgb(49, 49, 49) groove 2px;
+}
+
+.signinForm {
+  position: relative;
+  border: rgb(14, 92, 165) 2px outset;
+  width: 300px;
+  border-radius: 4px;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+.signinForm input {
+ height: 30px;
+ width: 270px;
+ margin-left: 10px;
+ margin-bottom: 10px;
+ font-weight: 700;
+ font-family: sans-serif;
+}
+.signinForm button {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  width: 70px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px 1px rgb(14, 92, 165);
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(14, 92, 165, 0.404);
+}
+.icons {
+ display: inline;
+border-bottom:  rgb(14, 92, 165) 2px outset;
+ width: 270px;
+ margin-left: 25px;
+ margin-top: 20px;
+}
+
+.icon {
+ width: 60px;
+ margin-top: 10px;
+}
+ 
+.centerbox{
+  position: relative;
+  width: 780px;
+  height: 680px;
+  border:  rgb(14, 92, 165) 2px outset;
+  border-radius: 4px;
+  margin: 0 auto;
+  bottom: 204px;
+  
+}
+
+.page2{
+  position: relative;
+  background-color: #b4b4b488;
+  width: 99%;
+  height: 700px auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  border:  rgb(14, 92, 165) 2px groove;
+  border-radius: 4px;
+}
+
+.card{
+margin: 0 auto;
+margin-top: 20px;  
+border: rgb(14, 92, 165) 2px outset;
+width: 600px;
+height: auto;
+}
+
+.card img {
+margin-left: 50%;
+border:  rgb(14, 92, 165) 2px outset;
+}
+
+.cardcomment{
+  margin: 0 auto;
+  width: 300px;
+  max-height: 100px;
+  background-color: ivory;
+  overflow: scroll;
+  scrollbar-track-color: rgb(121, 121, 121);
+  scrollbar-color: black;
+}
+.menuholder{
+  display: none;
+  height: 0px;
+}
+
+.menuholderAfterClick{
+  position: relative;
+  width: 200px;
+  height: 500px;
+  background-color: #747e8d;
+  float: right;
+  margin-top: 7px;
+  border-radius: 0px 0px 0px 4px;
+  display: grid;
+  color: white;
+  text-align: center;
+  box-shadow: 0px 1px 8px 0px rgb(70, 70, 70);
+}
+.menuholder div {
+  position: relative;
+  height: 40px;
+}
+
+.REGISTER{
+  position: relative;
+  margin: 0 auto;
+}
+
+.RegisterForm{
+  position: relative;
+  margin: 0 auto;
+  width: 96.1%;
+  height: 800px;
+  border-radius: 4px;
+  background-color: white;
+}
+.RegisterForm div {
+  margin: 0 auto;
+  background-color: none;
+  display: grid;
+  place-items: center;
+  height: 425px;
+  width: 50%;
+  top: 25px;
+}
+.RegisterForm div input{
+  height: 40px;
+  width: 400px;
+  font-size: 20px;
+}
+.RegisterForm button{
+  width: 80px;
+  height: 30px;
+  background-color: orange;
+  border-radius: 4px;
+}
+.TimeLineCard{
+  position: relative;
+  background-color: white;
+  border-radius: 3px;
+  width: 770px;
+  max-width: 770px;
+  height: 700px;
+  max-height: 700px;
+  margin: 0 auto;
+  margin-top: 10px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HOVERS */
+.HeaderMenu a :hover{
+  transition: ease-in 0.2s;
+  background-color: #282c34;
+}
+
+.HeaderMenu li:hover {
+  background-color: #282c34;
+  transition: ease-in 0.2s;
+}
+
+.icons :hover{
+ animation: flicker 1s linear infinite;
+
+}
+
+.menuicon:hover{
+  animation: flicker 1s linear infinite;
+}
+
+.menuholder div:hover {
+  border: outset 2px black;
+  background-color: #535963;
+  transition: 0.05s;
+}
+
+
+
+/* ANIMATIONS */
+
+@keyframes flicker {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		box-shadow: 1px 0px 4px #d5dbff, 2px 0px 4px #d6d5ff,
+     3px 0px 4px #ddd5ff, 2px 0px 3px #2c45d4, 2px 3px 15px #502cd4,
+      2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #5e2cd4,40px 0vw 200px #3d2cd4;
+    color: rgb(38, 38, 255);
+    opacity: .99;
+		
+	}
+	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+	}
+}
